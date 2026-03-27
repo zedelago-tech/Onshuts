@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+body {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  font-family: var(--font-sans);
+}
+
+.brutal-border {
+  border: 2px solid #f5f5f5;
+}
+
+.creative-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 10% 10%, rgba(99, 102, 241, 0.1) 0%, transparent 40%);
+}
+
+.markdown-body h1 { @apply text-2xl font-bold mb-4 text-indigo-400; }
+.markdown-body h2 { @apply text-xl font-semibold mb-3 mt-6 text-blue-400 border-b border-white/10 pb-1; }
+.markdown-body h3 { @apply text-lg font-medium mb-2 mt-4 text-indigo-300; }
+.markdown-body p { @apply mb-4 leading-relaxed opacity-90; }
+.markdown-body ul { @apply list-disc pl-6 mb-4 space-y-2; }
+.markdown-body li { @apply opacity-90; }
+.markdown-body strong { @apply text-white font-semibold; }
+.markdown-body blockquote { @apply border-l-4 border-indigo-500 pl-4 italic my-4 bg-white/5 py-2 pr-2; }
+
